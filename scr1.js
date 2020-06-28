@@ -1,3 +1,9 @@
 "use strict";
-function f();
-alert(typeof f.name);
+let animal = {
+    eats: true
+};
+let rabbit = {
+    fuck: true
+};
+Object.setPrototypeOf(rabbit, animal);
+alert(JSON.stringify(rabbit));
