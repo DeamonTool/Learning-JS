@@ -1,9 +1,3 @@
 "use strict";
-let animal = {
-    eats: true
-};
-let rabbit = {
-    fuck: true
-};
-Object.setPrototypeOf(rabbit, animal);
-alert(JSON.stringify(rabbit));
+let promise = new Promise((a, b) => a(5));
+promise.then(mas => alert(mas), mas =>  alert(mas));
